@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+*::selection{
+    color: #fff;
+    background-color: black;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    z-index: 99;
+    position: fixed;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+nav .nav-part1{
+    height: 82px;
+    /* background-color: firebrick; */
+    overflow: hidden;
+}
+nav .nav-part1 svg{
+    display: block;
+      
+}
+nav .nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; 
+}
+nav .nav-part2 .links a{
+    text-decoration: none;
+    color: black;
+    /* font-family: futura; */
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0 20px;
+}
+nav .nav-part2 .icons{
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 50px;
+}
+nav .nav-part2 .icons i{
+    margin: 0 20px;
+    font-size: 18px;
+}
+#cursor{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background-color: #cecbcb;
+    position: fixed;
+}
+.page1{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding: 0 1vw;
+    padding-top: 30vh;
+}
+.page1 h1{
+    font-size: 15.4vw;
+    font-family: futura;
+    line-height: 13vw;
+    letter-spacing: -8px;
+}
+.img-cont{
+    height: 100vh;
+    width: 100%;
+    margin-top: 1vw;
+}
+.img-cont img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.page1-bottom{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+    line-height: 7vh;
+}
+.page1-bottom h1{
+    font-size: 10vh;
+    letter-spacing: normal;
+}
+.page1-bottom p{
+    font-weight: 400;
+    font-family: popins, sans-serif;
+}
+.page1-bottom a{
+    color: black;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-family: "ABC Social Mono", "Lucida Sans", Tahoma, nonospaced;
+    text-underline-offset: 10px;
+}
+.page1-bottom div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.page1-bottom div.line{
+    height: 2px;
+    background-color: rgb(85, 83, 83);
+}   
+.page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 1vw;
+}
+.page2 .elm{
+    height: 100%;
+    width: 31%;
+    /* background-color: red; */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+ .page2 .elm img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.1;
+ }
+ .page2 .elm .dets{
+    position: absolute;
+    background-color: #b9a3a2;
+    z-index: 9;
+    height: 55px;
+    width: 70%;
+    border-radius: 50px;
+ }
+.page2 .dets .goal{
+    background-color: black;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+.page2 .dets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-family: futura;
+    font-size: 15px;
+}
+.page3{
+    min-height: 200vh;
+    width: 100%;
+}
+ .bottom{
+    padding-top: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+.page3 .bottom .child{
+    height: 60vh;
+    width: 38vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 20px solid black; */
+    /* background-color: blue; */
+    /* padding: 20px 0; */
+}
+.child img{
+    height: 100%;
+}
+.page3 .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .page3 .top h1{
+    font-size: 60px;
+    font-family: futura;
+    width: 100%;
+    padding-left: 20px;
+    line-height: 60px;
+    text-transform: uppercase;    
+}
+.page3 .top2{
+    width: 50%;
+    font-family: futura;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-right: 90px;
+    padding-top: 50px;
+} 
+.page3 .top2 .para2{
+    margin: 30px 0;
+}
+.page3 .top2 a{
+    color: black;
+    font-weight: lighter;
+    text-underline-offset: 10px;
+    font-size: 12px;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 2px;
+}
+.line{
+    background-color: #222222dc;
+    height: 2px;
+    padding: 0 2px;
+}
+footer{
+    min-height: 120vh;
+    width: 100%;
+    /* background-color: aqua; */
+}
+footer .part1{
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .part1 ul{
+    list-style: none;
+}
+footer .part1 ul li:first-child{
+    padding-bottom: 20px;
+    color: gray;
+}
+footer .part1 ul a{
+    text-decoration: none;
+    color: black;
+    /* margin: 17px 0; */
+}
+footer .part1 .logo svg{
+    height: 200px;
+    width: 200px;
+}
+footer .part2 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 90px 0;
+    color: gray;
+    font-size: 13px;
+}
+footer .part2 p{
+    width: 60vw;
+    text-align: center;
+    margin: 0 auto;  
+}
+ @media (max-width:600px) {
+    .page1{
+    min-height: 70vh;
+    width: 100%;
+    padding: 0 3vw;
+    padding-top: 25vw;
+    /* background-color: blue; */
+    }
+    .page1 h1{
+    font-size: 15.5vw;
+    letter-spacing: -3px;
+}
+.img-cont{
+    height: 25vh;
+   
+    margin-top: 3vw;
+}
+ .page2 {
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* allow full scroll height */
+  }
+
+  .page2 .elm {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .page2 .elm img {
+    height: auto;
+  }
+.page3 .top{
+    display: flex;
+    flex-direction: column;
+}
+.page3 .bottom{
+    flex-direction: column;   /* ek column me le ao */
+    padding-top: 20px;
+    gap: 15px
+} 
+footer .part1 .logo svg{
+    display: none;
+}
+}
